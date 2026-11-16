@@ -1,0 +1,38 @@
+{
+  "case_count": 24,
+  "policy_summary": {
+    "empty-page-stop": {
+      "cases": 24,
+      "action_errors": 4,
+      "action_accuracy_pct": 83.3,
+      "duplicate_rows_returned": 4,
+      "expected_unique_items": 36,
+      "returned_item_rows": 32
+    },
+    "blind-follow": {
+      "cases": 24,
+      "action_errors": 8,
+      "action_accuracy_pct": 66.7,
+      "duplicate_rows_returned": 8,
+      "expected_unique_items": 36,
+      "returned_item_rows": 52
+    },
+    "cursor-cycle-guard": {
+      "cases": 24,
+      "action_errors": 0,
+      "action_accuracy_pct": 100.0,
+      "duplicate_rows_returned": 4,
+      "expected_unique_items": 36,
+      "returned_item_rows": 40
+    },
+    "cycle-guard-plus-dedupe": {
+      "cases": 24,
+      "action_errors": 0,
+      "action_accuracy_pct": 100.0,
+      "duplicate_rows_returned": 0,
+      "expected_unique_items": 36,
+      "returned_item_rows": 36
+    }
+  },
+  "scope": "constructed deterministic client fixture; no live API/provider calls"
+}

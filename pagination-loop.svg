@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="320" viewBox="0 0 1080 320">
+<rect width="100%" height="100%" fill="#fff"/><style>text{font-family:Arial,sans-serif;fill:#17202a}.h{font-size:20px;font-weight:700}.b{font-size:15px}.s{font-size:13px;fill:#536171}.box{fill:#f7fafc;stroke:#55728a;stroke-width:2}.good{fill:#e8f4ed;stroke:#39835b;stroke-width:2}.bad{fill:#fff1ed;stroke:#c75c49;stroke-width:2}.arr{stroke:#55728a;stroke-width:2;marker-end:url(#a)}</style>
+<defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 Z" fill="#55728a"/></marker></defs>
+<text x="28" y="36" class="h">A safer page loop follows continuation state, not page fullness</text>
+<rect x="28" y="95" width="210" height="98" rx="12" class="box"/><text x="48" y="128" class="b">Read response</text><text x="48" y="154" class="s">items + next link/token</text><text x="48" y="176" class="s">keep provider contract</text>
+<line x1="238" y1="144" x2="300" y2="144" class="arr"/>
+<rect x="300" y="95" width="220" height="98" rx="12" class="box"/><text x="320" y="128" class="b">Continuation exists?</text><text x="320" y="154" class="s">No → stop</text><text x="320" y="176" class="s">Yes → inspect cursor</text>
+<line x1="520" y1="144" x2="582" y2="144" class="arr"/>
+<rect x="582" y="95" width="220" height="98" rx="12" class="box"/><text x="602" y="128" class="b">Cursor already seen?</text><text x="602" y="154" class="s">Yes → stop and flag loop</text><text x="602" y="176" class="s">No → request next page</text>
+<line x1="802" y1="144" x2="864" y2="144" class="arr"/>
+<rect x="864" y="95" width="188" height="98" rx="12" class="good"/><text x="884" y="128" class="b">Merge items</text><text x="884" y="154" class="s">dedupe by stable ID</text><text x="884" y="176" class="s">retain cursor + cap</text>
+<rect x="300" y="226" width="220" height="54" rx="10" class="bad"/><text x="318" y="259" class="s">Empty items ≠ end of sequence</text><line x1="410" y1="193" x2="410" y2="226" class="arr"/>
+<text x="600" y="253" class="s">Stop conditions belong to protocol metadata and a bounded loop guard.</text>
+</svg>

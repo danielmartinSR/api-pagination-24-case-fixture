@@ -1,0 +1,370 @@
+[
+  {
+    "case_id": "P11",
+    "scenario": "nonempty_new_cursor",
+    "current_cursor": "page1-1",
+    "next_cursor": "c1",
+    "seen_cursors": [],
+    "current_item_ids": [
+      "a",
+      "b"
+    ],
+    "next_page_item_ids": [
+      "b",
+      "x1"
+    ],
+    "expected_action": "continue",
+    "expected_unique_items": 3
+  },
+  {
+    "case_id": "P12",
+    "scenario": "nonempty_new_cursor",
+    "current_cursor": "page1-2",
+    "next_cursor": "c2",
+    "seen_cursors": [],
+    "current_item_ids": [
+      "a",
+      "b"
+    ],
+    "next_page_item_ids": [
+      "b",
+      "x2"
+    ],
+    "expected_action": "continue",
+    "expected_unique_items": 3
+  },
+  {
+    "case_id": "P13",
+    "scenario": "nonempty_new_cursor",
+    "current_cursor": "page1-3",
+    "next_cursor": "c3",
+    "seen_cursors": [],
+    "current_item_ids": [
+      "a",
+      "b"
+    ],
+    "next_page_item_ids": [
+      "b",
+      "x3"
+    ],
+    "expected_action": "continue",
+    "expected_unique_items": 3
+  },
+  {
+    "case_id": "P14",
+    "scenario": "nonempty_new_cursor",
+    "current_cursor": "page1-4",
+    "next_cursor": "c4",
+    "seen_cursors": [],
+    "current_item_ids": [
+      "a",
+      "b"
+    ],
+    "next_page_item_ids": [
+      "b",
+      "x4"
+    ],
+    "expected_action": "continue",
+    "expected_unique_items": 3
+  },
+  {
+    "case_id": "P21",
+    "scenario": "empty_page_new_cursor",
+    "current_cursor": "page2-1",
+    "next_cursor": "c1",
+    "seen_cursors": [],
+    "current_item_ids": [],
+    "next_page_item_ids": [
+      "x1",
+      "y1"
+    ],
+    "expected_action": "continue",
+    "expected_unique_items": 2
+  },
+  {
+    "case_id": "P22",
+    "scenario": "empty_page_new_cursor",
+    "current_cursor": "page2-2",
+    "next_cursor": "c2",
+    "seen_cursors": [],
+    "current_item_ids": [],
+    "next_page_item_ids": [
+      "x2",
+      "y2"
+    ],
+    "expected_action": "continue",
+    "expected_unique_items": 2
+  },
+  {
+    "case_id": "P23",
+    "scenario": "empty_page_new_cursor",
+    "current_cursor": "page2-3",
+    "next_cursor": "c3",
+    "seen_cursors": [],
+    "current_item_ids": [],
+    "next_page_item_ids": [
+      "x3",
+      "y3"
+    ],
+    "expected_action": "continue",
+    "expected_unique_items": 2
+  },
+  {
+    "case_id": "P24",
+    "scenario": "empty_page_new_cursor",
+    "current_cursor": "page2-4",
+    "next_cursor": "c4",
+    "seen_cursors": [],
+    "current_item_ids": [],
+    "next_page_item_ids": [
+      "x4",
+      "y4"
+    ],
+    "expected_action": "continue",
+    "expected_unique_items": 2
+  },
+  {
+    "case_id": "P31",
+    "scenario": "no_continuation",
+    "current_cursor": "page3-1",
+    "next_cursor": null,
+    "seen_cursors": [],
+    "current_item_ids": [
+      "a1"
+    ],
+    "next_page_item_ids": [],
+    "expected_action": "stop",
+    "expected_unique_items": 1
+  },
+  {
+    "case_id": "P32",
+    "scenario": "no_continuation",
+    "current_cursor": "page3-2",
+    "next_cursor": null,
+    "seen_cursors": [],
+    "current_item_ids": [
+      "a2"
+    ],
+    "next_page_item_ids": [],
+    "expected_action": "stop",
+    "expected_unique_items": 1
+  },
+  {
+    "case_id": "P33",
+    "scenario": "no_continuation",
+    "current_cursor": "page3-3",
+    "next_cursor": null,
+    "seen_cursors": [],
+    "current_item_ids": [
+      "a3"
+    ],
+    "next_page_item_ids": [],
+    "expected_action": "stop",
+    "expected_unique_items": 1
+  },
+  {
+    "case_id": "P34",
+    "scenario": "no_continuation",
+    "current_cursor": "page3-4",
+    "next_cursor": null,
+    "seen_cursors": [],
+    "current_item_ids": [
+      "a4"
+    ],
+    "next_page_item_ids": [],
+    "expected_action": "stop",
+    "expected_unique_items": 1
+  },
+  {
+    "case_id": "P41",
+    "scenario": "repeated_cursor",
+    "current_cursor": "page4-1",
+    "next_cursor": "seen",
+    "seen_cursors": [
+      "seen"
+    ],
+    "current_item_ids": [
+      "a1"
+    ],
+    "next_page_item_ids": [
+      "a1",
+      "z1"
+    ],
+    "expected_action": "stop",
+    "expected_unique_items": 1
+  },
+  {
+    "case_id": "P42",
+    "scenario": "repeated_cursor",
+    "current_cursor": "page4-2",
+    "next_cursor": "seen",
+    "seen_cursors": [
+      "seen"
+    ],
+    "current_item_ids": [
+      "a2"
+    ],
+    "next_page_item_ids": [
+      "a2",
+      "z2"
+    ],
+    "expected_action": "stop",
+    "expected_unique_items": 1
+  },
+  {
+    "case_id": "P43",
+    "scenario": "repeated_cursor",
+    "current_cursor": "page4-3",
+    "next_cursor": "seen",
+    "seen_cursors": [
+      "seen"
+    ],
+    "current_item_ids": [
+      "a3"
+    ],
+    "next_page_item_ids": [
+      "a3",
+      "z3"
+    ],
+    "expected_action": "stop",
+    "expected_unique_items": 1
+  },
+  {
+    "case_id": "P44",
+    "scenario": "repeated_cursor",
+    "current_cursor": "page4-4",
+    "next_cursor": "seen",
+    "seen_cursors": [
+      "seen"
+    ],
+    "current_item_ids": [
+      "a4"
+    ],
+    "next_page_item_ids": [
+      "a4",
+      "z4"
+    ],
+    "expected_action": "stop",
+    "expected_unique_items": 1
+  },
+  {
+    "case_id": "P51",
+    "scenario": "previously_seen_cursor",
+    "current_cursor": "page5-1",
+    "next_cursor": "old1",
+    "seen_cursors": [
+      "old1"
+    ],
+    "current_item_ids": [
+      "a1"
+    ],
+    "next_page_item_ids": [
+      "q1"
+    ],
+    "expected_action": "stop",
+    "expected_unique_items": 1
+  },
+  {
+    "case_id": "P52",
+    "scenario": "previously_seen_cursor",
+    "current_cursor": "page5-2",
+    "next_cursor": "old2",
+    "seen_cursors": [
+      "old2"
+    ],
+    "current_item_ids": [
+      "a2"
+    ],
+    "next_page_item_ids": [
+      "q2"
+    ],
+    "expected_action": "stop",
+    "expected_unique_items": 1
+  },
+  {
+    "case_id": "P53",
+    "scenario": "previously_seen_cursor",
+    "current_cursor": "page5-3",
+    "next_cursor": "old3",
+    "seen_cursors": [
+      "old3"
+    ],
+    "current_item_ids": [
+      "a3"
+    ],
+    "next_page_item_ids": [
+      "q3"
+    ],
+    "expected_action": "stop",
+    "expected_unique_items": 1
+  },
+  {
+    "case_id": "P54",
+    "scenario": "previously_seen_cursor",
+    "current_cursor": "page5-4",
+    "next_cursor": "old4",
+    "seen_cursors": [
+      "old4"
+    ],
+    "current_item_ids": [
+      "a4"
+    ],
+    "next_page_item_ids": [
+      "q4"
+    ],
+    "expected_action": "stop",
+    "expected_unique_items": 1
+  },
+  {
+    "case_id": "P61",
+    "scenario": "empty_next_page_new_cursor",
+    "current_cursor": "page6-1",
+    "next_cursor": "c1",
+    "seen_cursors": [],
+    "current_item_ids": [
+      "a1"
+    ],
+    "next_page_item_ids": [],
+    "expected_action": "continue",
+    "expected_unique_items": 1
+  },
+  {
+    "case_id": "P62",
+    "scenario": "empty_next_page_new_cursor",
+    "current_cursor": "page6-2",
+    "next_cursor": "c2",
+    "seen_cursors": [],
+    "current_item_ids": [
+      "a2"
+    ],
+    "next_page_item_ids": [],
+    "expected_action": "continue",
+    "expected_unique_items": 1
+  },
+  {
+    "case_id": "P63",
+    "scenario": "empty_next_page_new_cursor",
+    "current_cursor": "page6-3",
+    "next_cursor": "c3",
+    "seen_cursors": [],
+    "current_item_ids": [
+      "a3"
+    ],
+    "next_page_item_ids": [],
+    "expected_action": "continue",
+    "expected_unique_items": 1
+  },
+  {
+    "case_id": "P64",
+    "scenario": "empty_next_page_new_cursor",
+    "current_cursor": "page6-4",
+    "next_cursor": "c4",
+    "seen_cursors": [],
+    "current_item_ids": [
+      "a4"
+    ],
+    "next_page_item_ids": [],
+    "expected_action": "continue",
+    "expected_unique_items": 1
+  }
+]
